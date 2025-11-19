@@ -1,0 +1,180 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #c3aed6, #ede7f6); 
+    animation: globalFadeIn 1.5s ease-in-out; 
+}
+
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background-color: rgba(186, 104, 200, 0.9); 
+    color: white;
+    animation: headerSlideIn 2s ease-out; 
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5em;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fdd835; 
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.8);
+}
+
+
+.animal-display {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 20px;
+    margin: 40px 10%;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.animal-display h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    color: #6a1b9a;
+}
+
+.animal-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animal-card {
+    position: relative;
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: cardSlideIn 1.5s ease;
+}
+
+.animal-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.animal-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #ab47bc;
+}
+
+.animal-card h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    font-size: 2em;
+    color: #ab47bc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    padding: 15px;
+}
+
+
+.cta-button {
+    background-color: #ab47bc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #8e24aa;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
+}
+
+
+footer {
+    background-color: #8e24aa;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+
+@keyframes globalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes headerSlideIn {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>领养问卷 / Adoption Survey</title>
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+    <header>
+        <h1>领养问卷 / Adoption Survey</h1>
+    </header>
+    <main>
+        <form action="submit_form_destination" method="POST" class="adoption-form">
+            <fieldset>
+                <legend>个人信息 / Personal Information</legend>
+                <label for="name">姓名 / Name:
+                    <input type="text" id="name" name="name" placeholder="请输入您的姓名 / Enter your name" required>
+                </label>
+                <label for="address">地址 / Address:
+                    <input type="text" id="address" name="address" placeholder="请输入您的地址 / Enter your address" required>
+                </label>
+                <label for="contact">联系方式 / Contact Information:
+                    <input type="text" id="contact" name="contact" placeholder="请输入您的联系方式 / Enter your contact" required>
+                </label>
+                <label for="occupation">职业 / Occupation:
+                    <input type="text" id="occupation" name="occupation" placeholder="请输入您的职业 / Enter your occupation" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>家庭环境 / Household Environment</legend>
+                <label for="residence_type">住宅类型 / Type of Residence:
+                    <input type="text" id="residence_type" name="residence_type" placeholder="请输入住宅类型 / Enter your residence type" required>
+                </label>
+                <label for="living_situation">居住情况 / Living Situation:
+                    <input type="text" id="living_situation" name="living_situation" placeholder="请输入居住情况 / Enter your living situation" required>
+                </label>
+                <label for="other_pets">家中是否已有其他宠物? / Do you have other pets at home?
+                    <input type="text" id="other_pets" name="other_pets" placeholder="请输入家中宠物数量 / Enter number of pets" required>
+                </label>
+                <label for="children">家中是否有孩子? / Do you have children at home?
+                    <input type="text" id="children" name="children" placeholder="请输入家中孩子数量 / Enter number of children" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>宠物养护经验 / Pet Care Experience</legend>
+                <label for="previous_pets">您以前养过宠物吗? / Have you owned pets before?
+                    <textarea id="previous_pets" name="previous_pets" placeholder="请输入您的宠物养护经验 / Enter your pet care experience" required></textarea>
+                </label>
+                <label for="pet_care_plan">您如何计划满足宠物的日常需求? / How do you plan to meet the pet's daily needs?
+                    <textarea id="pet_care_plan" name="pet_care_plan" placeholder="请输入您的宠物日常照顾计划 / Enter your pet care plan" required></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>领养动机与期望 / Adoption Motivation and Expectations</legend>
+                <label for="adoption_motivation">你为什么想领养宠物? / Why do you want to adopt a pet?
+                    <textarea id="adoption_motivation" name="adoption_motivation" placeholder="请输入您的领养动机 / Enter your adoption motivation" required></textarea>
+                </label>
+            </fieldset>
+            <button type="submit">提交问卷 / Submit Survey</button>
+            <button type="button" onclick="window.location.href='index.html';" class="back-home-button">返回主页 / Back to Home</button> <!-- 新增返回主页按钮 -->
+        </form>
+    </main>
+    <footer>
+        <p>S1P1 Stray Animal Adoption and Sharing Platform. All rights reserved. / S1P1 流浪动物领养与分享平台。保留所有权利。</p>
+    </footer>
+</body>
+</html>

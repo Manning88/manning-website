@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #d6b0ff, #f4e1ff); 
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+header {
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(102, 51, 153, 0.8); 
+    color: white;
+}
+
+.header-content h1 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 4em;
+    margin: 0;
+}
+
+.header-content p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+    color: white;
+    background-color: rgba(102, 51, 153, 0.7); 
+    border-radius: 15px;
+    margin: 30px auto;
+    width: 80%;
+    animation: slideIn 2s ease-in-out;
+}
+
+.about-section h2 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2em;
+    line-height: 1.8;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.team {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    text-align: center;
+}
+
+.team h2 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 3em;
+    color: #9932cc;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    position: relative;
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #9932cc;
+}
+
+.team-card h3 {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #9932cc;
+}
+
+.team-card p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+.team-card-overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(153, 50, 204, 0.9);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-card-overlay {
+    transform: translateY(0);
+}
+
+
+footer {
+    background-color: #9932cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

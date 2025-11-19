@@ -1,0 +1,200 @@
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #6a1b9a;  
+    color: white;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 4.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #ab47bc;
+    z-index: 1000;
+}
+
+.nav-buttons {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-buttons li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-button {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #fdd835; 
+}
+
+.visual-section {
+    text-align: center;
+    padding: 80px 0;
+    background-image: url('soft-fireworks-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.visual-section h2 {
+    font-size: 3.8em;
+    color: #fce4ec; 
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.visual-section p {
+    font-size: 1.3em;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #f8bbd0;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #ffab91; 
+    color: #0d47a1; 
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ff7043; 
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(255, 112, 67, 0.6);
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.content-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5em;
+    color: #1a237e;
+    margin-bottom: 50px;
+}
+
+.info-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.info-box {
+    width: 30%;
+    background-color: #e1f5fe;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+.info-box h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+/* Magazine Section */
+.magazine-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.story-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+    background-color: #fafafa;
+}
+
+.story-card {
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 1s ease;
+    background: linear-gradient(135deg, #ffccbc, #f8bbd0); 
+}
+
+.story-card:nth-child(2) {
+    background: linear-gradient(135deg, #b2ebf2, #81d4fa); 
+}
+
+.story-card:nth-child(3) {
+    background: linear-gradient(135deg, #c8e6c9, #a5d6a7); 
+}
+
+.story-card img {
+    width: 100%;
+    height: auto;
+}
+
+.story-card h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a237e;
+    margin: 20px;
+    font-size: 2em;
+}
+
+.story-card p {
+    padding: 0 15px 20px;
+    font-size: 1.3em;
+    color: #555;
+    text-align: left; /* 修改为左对齐 */
+}
+
+footer {
+    background-color: #f48fb1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
